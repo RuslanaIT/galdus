@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SfidaMi.site - Gestione Collaboratori</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>SfidaMi.site</h1>
+            <p>Sistema di Gestione Collaboratori</p>
+        </header>
+
+        <main>
+            <section class="add-collaborator">
+                <h2>Aggiungi Collaboratore</h2>
+                <form id="collaboratorForm">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="role">Ruolo:</label>
+                        <select id="role" name="role" required>
+                            <option value="">Seleziona un ruolo</option>
+                            <option value="developer">Sviluppatore</option>
+                            <option value="designer">Designer</option>
+                            <option value="manager">Project Manager</option>
+                            <option value="tester">Tester</option>
+                        </select>
+                    </div>
+                    <button type="submit">Aggiungi Collaboratore</button>
+                </form>
+            </section>
+
+            <section class="collaborators-list">
+                <h2>Lista Collaboratori</h2>
+                <div id="collaboratorsList">
+                    <!-- Collaboratori verranno aggiunti qui dinamicamente -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
