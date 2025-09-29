@@ -1,0 +1,15 @@
+# Sfidami Site Configuration
+# This file contains site configuration for sfidami
+
+[site]
+name = "Sfidami"
+description = "Site configuration file"
+version = "1.0"
+
+[settings]
+enabled = true
+debug = false
+
+[metadata]
+created = "2024"
+author = "galdus project"
